@@ -1,0 +1,11 @@
+.modern-gray {
+    -fx-background-color: #888888;
+}
+#loginButton {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.root {
+	    -fx-background-color: #888888;
+}

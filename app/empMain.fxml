@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1021.0" prefWidth="1750.0" style="-fx-background-color: #888888;" styleClass="root" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.empMainController">
+	<children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c42121" height="1021.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="447.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Text fill="#f3f3f3" layoutX="132.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Successfully Logged In">
+            <font>
+                <Font name="Yu Gothic Regular" size="14.0" />
+            </font>
+        </Text>
+        <Button fx:id="addEmp" layoutX="487.0" layoutY="67.0" mnemonicParsing="false" onAction="#addEmp" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 5px;" text="Add to the Database">
+
+            <font>
+                <Font name="Yu Gothic Regular" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="searchEmp" layoutX="192.0" layoutY="542.0" mnemonicParsing="false" onAction="#searchEmp" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 5px;" text="Search">
+
+            <font>
+                <Font name="Yu Gothic Regular" size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="input" layoutX="17.0" layoutY="478.0" prefHeight="45.0" prefWidth="413.0" promptText="Enter Full Email Address">
+            <font>
+                <Font name="Yu Gothic Regular" size="14.0" />
+            </font>
+        </TextField>
+        <Text layoutX="487.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Status: CONNECTED-STRONG" />
+        <Text layoutX="875.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE OVERVIEW">
+            <font>
+                <Font name="Yu Gothic Regular" size="36.0" />
+            </font>
+        </Text>
+        <Line endX="919.0" layoutX="831.0" layoutY="133.0" startX="-384.0000305175781" />
+		<TableView fx:id="tableView" layoutX="478.0" layoutY="164.0" prefHeight="837.0" prefWidth="1241.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="112.82" text="Name" />
+                <TableColumn fx:id="emailColumn" prefWidth="112.82" text="Email" />
+                <TableColumn fx:id="cevoIssuedColumn" prefWidth="112.82" text="CEVO Issued" />
+                <TableColumn fx:id="dotExpColumn" prefWidth="112.82" text="DOT Exp." />
+                <TableColumn fx:id="palsExpColumn" prefWidth="112.82" text="PALS Exp." />
+                <TableColumn fx:id="aclsExpColumn" prefWidth="112.82" text="ACLS Exp." />
+                <TableColumn fx:id="emsExpColumn" prefWidth="112.82" text="EMS Exp." />
+                <TableColumn fx:id="driversExpColumn" prefWidth="112.82" text="Driver's Exp." />
+                <TableColumn fx:id="blsExpColumn" prefWidth="112.82" text="BLS Exp." />
+                <TableColumn fx:id="mvrExpColumn" prefWidth="112.82" text="MVR Exp." />
+                <TableColumn fx:id="licensureLevelColumn" prefWidth="112.82" text="Licensure Level" />
+            </columns>
+        </TableView>
+      <ImageView fitHeight="205.0" fitWidth="263.0" layoutX="121.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/download.png" />
+         </image>
+      </ImageView>
+	  <Button fx:id="allExp" layoutX="88.0" layoutY="595.0" mnemonicParsing="false" onAction="#toExpirations" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 5px;" text="View Upcoming Expirations for all Employees">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeClick" layoutX="649.0" layoutY="67.0" mnemonicParsing="false" onAction="#removeEmp" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 5px;" text="Remove from the Database">
+
+         <font>
+            <Font name="Yu Gothic Regular" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="101.0" fitWidth="131.0" layoutX="1605.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/serpent-snake.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
