@@ -116,8 +116,8 @@ public class empMainController {
         List<Employee> employeeList = new ArrayList<>();
 
         String url = "jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true";
-        String username = "serveradminROOT1015978141";
-        String password = "#56789#!!$$45678hhyy";
+        String username = ".env####";
+        String password = ".env####";
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             String sql = "SELECT * FROM Employee";
@@ -234,8 +234,8 @@ public class empMainController {
             String aclsExp, String emsExp, String driversExp, String blsExp,
             String licensureLevel, String mvrExp) {
         String url = "jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true";
-        String username = "serveradminROOT1015978141";
-        String password = "#56789#!!$$45678hhyy";
+        String username = ".env##";
+        String password = ".env##";
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             String sql = "INSERT INTO Employee (name, email, CEVO_ISS, DOT_EXP, PALS_EXP, ACLS_EXP, EMS_EXP, " +
@@ -271,8 +271,8 @@ public class empMainController {
 
         // Database connection parameters
         String url = "jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true";
-        String username = "serveradminROOT1015978141";
-        String password = "#56789#!!$$45678hhyy";
+        String username = ".env##.env##";
+        String password = "#.env.env##y";
 
         // SQL query to retrieve the email from the database
         String query = "SELECT email FROM Employee WHERE email = ?";
@@ -375,8 +375,8 @@ public class empMainController {
 
             // Database connection parameters
             String url = "jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true";
-            String username = "serveradminROOT1015978141";
-            String password = "#56789#!!$$45678hhyy";
+            String username = ".env##.env##";
+            String password = ".env##.env##";
 
             // SQL query to remove an employee by email
             String query = "DELETE FROM employee WHERE email = ?";
