@@ -1,4 +1,4 @@
-# JavaFX GUI Database Management System using MySQL with Azure & Secure SQLite
+# JavaFX GUI Database Management System using MySQL with Azure & SQLite (file based)
 
 This program is a JavaFX-based GUI database management system (DBMS) developed using Maven as the dependency management system. It incorporates BootstrapFX and CSS styling in JavaFX to enhance the visual appearance of the application. Originally designed for managing licensure in an institution, the program has been modified for GitHub display and distribution, with sensitive information such as database login credentials excluded. To get a glimpse of the program in action, please refer to the following screenshots:
 
