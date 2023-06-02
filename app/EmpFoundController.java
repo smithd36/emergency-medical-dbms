@@ -48,7 +48,7 @@ public class EmpFoundController {
     }
 
     public void searchEmp(String email) {
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true", "serveradminROOT1015978141", "#56789#!!$$45678hhyy")) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true", "###.env.env", "###.env.env")) {
             PreparedStatement statement = connection.prepareStatement(
                     "SELECT NAME, LICENSURE_LEVEL, LEAST(DOT_EXP, PALS_EXP, ACLS_EXP, EMS_EXP, DRIVERS_EXP, BLS_EXP, MVR_EXP) AS nearestExpiration " +
                             "FROM employee WHERE EMAIL = ?");
