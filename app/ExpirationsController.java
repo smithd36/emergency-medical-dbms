@@ -34,7 +34,7 @@ public class ExpirationsController {
         // Retrieve data from the database and populate the TableView
         try {
             // Establish a connection to the MySQL database
-            Connection connection = DriverManager.getConnection("jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true", "serveradminROOT1015978141", "#56789#!!$$45678hhyy");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://pemph.mysql.database.azure.com:3306/pemph?useSSL=true", "###.env.env", "###.env.env");
             Statement statement = connection.createStatement();
             String query = "SELECT NAME, LICENSURE_LEVEL, LEAST(DOT_EXP, PALS_EXP, ACLS_EXP, EMS_EXP, DRIVERS_EXP, BLS_EXP, MVR_EXP) AS NEAREST_EXPIRATION " +
                     "FROM employee";
