@@ -1,6 +1,6 @@
-# JavaFX GUI DBMS using MySQL and SQLite
+# JavaFX GUI Database Management System using MySQL with Azure & Secure SQLite
 
-This program is written in Java, using the Maven dependency management system. This program has implementations of bootstrapfx and CSS styling through JavaFX. Created to manage licensure of an institution, this program has been modified for GitHub display and distribution accordingly, excluding any and all critical account information including database login credentials. To view the program in action, check out these shots:
+This program is a JavaFX-based GUI database management system (DBMS) developed using Maven as the dependency management system. It incorporates BootstrapFX and CSS styling in JavaFX to enhance the visual appearance of the application. Originally designed for managing licensure in an institution, the program has been modified for GitHub display and distribution, with sensitive information such as database login credentials excluded. To get a glimpse of the program in action, please refer to the following screenshots:
 
 ![Screenshot 2023-05-31 133628](https://github.com/smithd36/mysql-javafx-medical-license-system/assets/90289165/512a8035-ea82-431c-86e9-41b3b16bed3e)
 ![Screenshot 2023-05-31 133603](https://github.com/smithd36/mysql-javafx-medical-license-system/assets/90289165/d7cba88c-abb9-4311-8af9-538d573ff3e0)
@@ -10,10 +10,10 @@ This program is written in Java, using the Maven dependency management system. T
 
 
 # Database
-The database is using Azure to serve users in an efficient way that allows simplicity and fast responses for users. The database is able to stay organized through a login management system built into the code which only allows one user to log in at a time. The "Lockbox" SQLite Database is not included in the files as it contains critical logon information and the DB can be easily reproduced with non-critical login credentials for a user looking to test the program on a different database,
+The program utilizes Azure as the database hosting service, ensuring efficient user interaction with quick response times. The database incorporates a login management system integrated into the code, allowing only one user to log in at a time. For security reasons, the "Lockbox" SQLite database, which contains critical login information, is not included in the repository. However, a user can easily reproduce the database with non-critical login credentials to test the program on a different database.
 
-# Functionality
-This program can effectively be ran on any device through the implementation of a JLaunch deployment process or a .jar file including all dependencies and required runtime environments and drivers. This program took roughly 2 weeks of my own time to make while simultaneously producing an Email Agent (seen in a different repo) to monitor this same database and notify a set group of people when an employee in the database is a certain amount of days nearing an expiration of a certail license.
+# Usage
+This program can be executed on any device by following the JLaunch deployment process or running the provided .jar file, which includes all dependencies and required runtime environments and drivers. The development of this program took approximately two weeks of dedicated effort. Additionally, during the development process, an Email Agent (located in a separate repository) was created to monitor the same database. The Email Agent notifies a predefined group of individuals when an employee in the database is nearing the expiration of a certain license.
 
 # License
-Copyright @ 2023 Smith, Drey - This program can rightfully be distributed by the owner and only by the owner. Users are allowed to use the code on their own cloned databases to achieve the full power and effect of the program.
+Copyright © 2023 Smith, Drey - The distribution rights of this program solely belong to the owner. Users are permitted to use the code on their cloned databases to fully utilize the program's functionality.
